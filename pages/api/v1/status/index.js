@@ -2,24 +2,32 @@ import database from "infra/database.js";
 
 const status = async (request, response) => {
   const updatedAt = new Date().toISOString();
-  const { rows: versionInfo } = await database.query("SELECT * FROM pg_settings WHERE name = 'server_version'");
-  const { rows: maxConnectionsInfo } = await database.query("SELECT * FROM pg_settings WHERE name ='max_connections'");
-  const { rows: openedConnectionsInfo } = await database.query("SELECT COUNT(*) FROM pg_stat_activity WHERE datname='local_db'");
+  const {
+    rows: [{ server_version: versionValue }],
+  } = await database.query("SHOW server_version;");
 
-  const { setting: version } = versionInfo[0];
-  const { setting: maxConnections } = maxConnectionsInfo[0];
-  const { count: openedConnections } = openedConnectionsInfo[0];
-  
+  const {
+    rows: [{ max_connections: maxConnectionsValue }],
+  } = await database.query("SHOW max_connections;");
+
+  const { POSTGRES_DB: databaseName } = process.env;
+
+  const {
+    rows: [{ opened_connections: openedConnectionsValue }],
+  } = await database.query({
+    text: "SELECT COUNT(*)::int as opened_connections FROM pg_stat_activity WHERE datname=$1;",
+    values: [databaseName],
+  });
 
   return response.status(200).json({
     updated_at: updatedAt,
     dependencies: {
       database: {
-        version: version,
-        max_connections: parseInt(maxConnections),
-        opened_connections: parseInt(openedConnections),
-      }
-    }
+        version: versionValue,
+        max_connections: parseInt(maxConnectionsValue),
+        opened_connections: openedConnectionsValue,
+      },
+    },
   });
 };
 
