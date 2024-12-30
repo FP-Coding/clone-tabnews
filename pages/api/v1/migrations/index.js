@@ -33,7 +33,7 @@ const migrations = async (request, response) => {
 
     return response.status(200).json(migratedMigrations);
   }
-
+// Deploy de homologação
   return response.status(405).end();
 
 };
