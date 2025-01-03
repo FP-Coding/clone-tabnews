@@ -4,21 +4,20 @@ const waitForAllServices = async () => {
   const waitForWebServer = () => {
     const fetchStatusPage = async () => {
       const response = await fetch("http://localhost:3000/api/v1/status");
-      
+
       if (response.status !== 200) {
-        throw Error()
+        throw Error();
       }
-    }
+    };
     return retry(fetchStatusPage, {
       retries: 100,
-      maxTimeout: 1000
+      maxTimeout: 1000,
     });
-
-  }
+  };
 
   await waitForWebServer();
-}
+};
 
 export default {
   waitForAllServices,
-}
+};
