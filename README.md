@@ -17,4 +17,5 @@ PRINCIPIOS -
 12) Não existe magia em progração, tudo é protocolo. Se existe um comportamento, há uma explicação para ela. Porém, nem sempre vamos estar disposto a pagar o preço para descobrí-la, mas ela existe, tente gerenciar seu tempo para achá-la.
 13) As vezes uma solução que o mundo precisa já existe e só precisa ser encontrada. Inovação nada mais é que fazer coisas de forma diferente( Exemplo: As coisas que fazem existir o docker, namespaces e cgroups. Existiam antes das soluções que foram criadas para resolver o problema que o docker resolve)
 14) Sempre que encontrar um comportamento diferente, use o chapéu do investigador e corra atrás. Não se conforme com o automagicamente
-
+15) Não coloque nada em um pedestal, tecnologias e pessoas são apenas tecnologias e pessoas. Colocar coisas em pedestais colocam elas em níveis que na sua cabeça se tornam inalcansáveis. E se são inalcansáveis não podem ser compreendidas!
+16) Mesmo produzindo tecnologias e ferramentas que não podem ser tocadas. O envelopamento que são entregues faz bastante diferença
