@@ -7,11 +7,10 @@ async function query(queryObject) {
     user: process.env.POSTGRES_USER,
     database: process.env.POSTGRES_DB,
     password: process.env.POSTGRES_PASSWORD,
-    ssl: process.env.NODE_ENV !== "development" ? true : false,
+    ssl: getSSLValues(),
   };
 
   const client = new Client(credenciaisDatabase);
-  console.log(credenciaisDatabase);
 
   try {
     await client.connect();
@@ -23,6 +22,15 @@ async function query(queryObject) {
   } finally {
     await client.end();
   }
+}
+
+function getSSLValues() {
+  if (process.env.POSTGRES_CA) {
+    return {
+      ca: POSTGRES_CA,
+    };
+  }
+  return process.env.NODE_ENV !== "development" ? true : false;
 }
 
 export default {
