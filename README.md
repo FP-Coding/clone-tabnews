@@ -21,3 +21,4 @@ PRINCIPIOS -
 16) Mesmo produzindo tecnologias e ferramentas que não podem ser tocadas. O envelopamento que são entregues faz bastante diferença
 17) Evitar erros que você nunca cometeu ao escrever código não necessariamente significa poupar tempo, mas com certeza significa perder conhecimentos que você pode aprender.
 18) A caracteristica mais importante de um software é ele ser modificável. Nada está escrito em pedra. O peso do que já existe no código não pode sucumbir sobre você. Repaginar e evoluir o que está PRECISA escrito sempre é possível.
+19) Evite a direção down, evite rollbacks se for corrigir algo faça um rollforward. Ou seja ao invés de reverter uma modificação. Faça outra modificação que corrija o comportamento anterior. Assim você terá certeza que o comportamento vai ser corrigido e não terá bugs causados pelo rollback
