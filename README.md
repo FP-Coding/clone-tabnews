@@ -19,3 +19,5 @@ PRINCIPIOS -
 14) Sempre que encontrar um comportamento diferente, use o chapéu do investigador e corra atrás. Não se conforme com o automagicamente
 15) Não coloque nada em um pedestal, tecnologias e pessoas são apenas tecnologias e pessoas. Colocar coisas em pedestais colocam elas em níveis que na sua cabeça se tornam inalcansáveis. E se são inalcansáveis não podem ser compreendidas!
 16) Mesmo produzindo tecnologias e ferramentas que não podem ser tocadas. O envelopamento que são entregues faz bastante diferença
+17) Evitar erros que você nunca cometeu ao escrever código não necessariamente significa poupar tempo, mas com certeza significa perder conhecimentos que você pode aprender.
+18) A caracteristica mais importante de um software é ele ser modificável. Nada está escrito em pedra. O peso do que já existe no código não pode sucumbir sobre você. Repaginar e evoluir o que está PRECISA escrito sempre é possível.
