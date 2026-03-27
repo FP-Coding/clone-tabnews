@@ -15,7 +15,15 @@
     "test": "jest --runInBand",
     "test:watch": "jest --watchAll --runInBand",
     "migration:create": "node-pg-migrate --migrations-dir infra/migrations create",
-    "migration:up": "node-pg-migrate --migrations-dir infra/migrations --envPath .env.development up"
+    "migration:up": "node-pg-migrate --migrations-dir infra/migrations --envPath .env.development up",
+    "status:get:production": "curl -s https://clone-tabnews-gtxs.vercel.app/api/v1/status | jq",
+    "status:get:production:watch": "watch -n 1 'curl -s https://clone-tabnews-gtxs.vercel.app/api/v1/status | jq' ",
+    "migration:get:production": "curl -s https://clone-tabnews-gtxs.vercel.app/api/v1/migrations | jq",
+    "migration:post:production": "curl -s -X POST https://clone-tabnews-gtxs.vercel.app/api/v1/migrations | jq",
+    "status:get:staging": "curl -s https://clone-tabnews-fpds-git-fix-migrations-11c265-fpcodings-projects.vercel.app/api/v1/status | jq",
+    "status:get:staging:watch": "watch -n 1 'curl -s https://clone-tabnews-fpds-git-fix-migrations-11c265-fpcodings-projects.vercel.app/api/v1/status | jq' ",
+    "migration:get:staging": "curl -s https://clone-tabnews-fpds-git-fix-migrations-11c265-fpcodings-projects.vercel.app/api/v1/migrations | jq",
+    "migration:post:staging": "curl -s -X POST https://clone-tabnews-fpds-git-fix-migrations-11c265-fpcodings-projects.vercel.app/api/v1/migrations | jq"
   },
   "author": "",
   "license": "MIT",
