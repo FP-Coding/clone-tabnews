@@ -3,6 +3,7 @@
 Implementação para praticar e aprender os conteúdos do curso.dev
 
 PRINCIPIOS - 
+0) Entre o mais profundo possível em qualquer coisa que você faz
 1) Erros são conhecimento - Explorar erros e ocasioná-los de propósito é uma das melhores formas de aprender e de longe é a melhor forma de criar imunidade tecnológica. Erros não devem ser uma critica pessoal ao seu código e sim um mapa de como resolver um problema. 
 2) Sempre teste que o novo comportamento que você quer, quebra o comportamento da aplicação. Antes de realizar qualquer ação de correção. ( Isso garante que as mudanças que você fez realmente afetaram o comportamento da aplicação da forma que você quer)
 3) Impressora 3d vs produção orgânica - Quando em fase de aprendizado sempre priorizar produzir coisas utilizando método de produção orgânica. Ou seja, enquanto estiver aprendendo sempre priorizar realizar pequenas entregas. Dessa forma o processo se torna muito mais proveitoso e menos doloroso. Só utilizar impressora 3d( Ou seja produzir tudo de uma porrada só, quando for algo que você já tem domínio e está produzindo apenas por obrigação)
@@ -22,3 +23,9 @@ PRINCIPIOS -
 17) Evitar erros que você nunca cometeu ao escrever código não necessariamente significa poupar tempo, mas com certeza significa perder conhecimentos que você pode aprender.
 18) A caracteristica mais importante de um software é ele ser modificável. Nada está escrito em pedra. O peso do que já existe no código não pode sucumbir sobre você. Repaginar e evoluir o que está PRECISA escrito sempre é possível.
 19) Evite a direção down, evite rollbacks se for corrigir algo faça um rollforward. Ou seja ao invés de reverter uma modificação. Faça outra modificação que corrija o comportamento anterior. Assim você terá certeza que o comportamento vai ser corrigido e não terá bugs causados pelo rollback
+20) Não seja um proxy burro. Sempre analise a forma que você está agindo ao estudar programação. Sempre que for estudar algo estude de forma manual. Digite linha por linha. Exercite seus neurônios.
+21) Ao estudar sempre tente fazer com que aquilo que você tá aprendendo, impacte ao menos de uma pessoa. Sempre jogue suas criações para o mundo. As pessoas merecem ver suas criações.
+22) Faça com que suas ações, tanto nos seus empregos, em seus produtos, em suas relações, afetem o Bottom Line(Bottom line é a linha do Resultado Liquido, Lucro Liquido, do Exercicio). Ou seja, faça com que suas ações impactem o resultado da empresa.
+22.1) Qual é o produto que mais influencia no lucro liquido da empresa
+22.2) Qual é o custo que mais impacta no lucro liquido da empresa
+23)
