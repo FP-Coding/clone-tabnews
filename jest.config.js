@@ -3,10 +3,12 @@ const dotenv = require("dotenv");
 
 dotenv.config({ path: ".env.development" });
 
-const createJestConfig = nextJest();
+const createJestConfig = nextJest({
+  dir: "./",
+});
 const jestConfig = createJestConfig({
-  dir: ".",
   moduleDirectories: ["node_modules", "<rootDir>"],
+  testTimeout: 60000,
 });
 
 module.exports = jestConfig;
