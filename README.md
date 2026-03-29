@@ -1,5 +1,9 @@
 # clone-tabnews
+Principios dos Videos virais
 
+1) Familiaridade - Problemas ou ocasiões que acontecem na maior da vida das pessoas
+2) Ahaa - O Cerebro libera dopamina quando aprende coisas novas
+3) Autoridade - Provar com fatos, artigos ou pesquisas
 Implementação para praticar e aprender os conteúdos do curso.dev
 
 PRINCIPIOS - 0) Entre o mais profundo possível em qualquer coisa que você faz
