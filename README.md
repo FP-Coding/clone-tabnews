@@ -33,3 +33,4 @@ PRINCIPIOS - 0) Entre o mais profundo possível em qualquer coisa que você faz
     22.1) Qual é o produto que mais influencia no lucro liquido da empresa
     22.2) Qual é o custo que mais impacta no lucro liquido da empresa
 23. Seja, sempre que possível e que não for te sobrecarregar, o The Big Person das situações de conflitos. Em resumo, é ser a Pessoa Mais Madura que assume a responsabilidade, independente da culpa ser sua ou não. Isso possibilita que você assuma o controle da situação e possa corrigir ela. Dessa forma você não foge de problemas e pode ganhar muito espaço com isso. Nenhuma gerência gosta de ficar lidando com pessoas que ficam se esquivando das responsabildades.
+24. Sempre que for aplicar mudanças ou melhorias. Faça baseado em números. Melhorias de performance por exemplo sempre devem apresentar os números que a mudança causam. Não adicione complexidade/entropia em um projeto sem necessidade.
