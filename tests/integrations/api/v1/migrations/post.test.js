@@ -23,7 +23,7 @@ test("POST to /api/v1/migrations should return 200", async () => {
   ]);
 });
 
-test("POST to /api/v1/migrations should return 200", async () => {
+test("POST to /api/v1/migrations should return 200 and a array empty", async () => {
   const response2 = await fetch("http://localhost:3000/api/v1/migrations", {
     method: "POST",
   });
