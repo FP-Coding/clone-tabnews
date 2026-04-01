@@ -1,0 +1,2 @@
+
+docker run -v /home/felipe/projetos/clone-tabnews:/path zricethezav/gitleaks:latest git ./path -v
