@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "npm run services:up && npm run services:wait:database && npm run migrations:up && next dev",
+    "test": "npm run services:up && concurrently -n next,jest --hide next -k -s command-jest \"next dev\" \"jest --runInBand\"",
+    "test:watch": "jest --watchAll --runInBand",
     "build": "next build",
     "start": "next start",
     "services:up": "docker compose -f infra/compose.yaml up -d",
@@ -16,8 +18,6 @@
     "lint:eslint:check": "npx eslint .",
     "lint:prettier:check": "prettier --check .",
     "lint:prettier:fix": "prettier --write .",
-    "test": "npm run services:up && concurrently -n next,jest --hide next -k -s command-jest \"next dev\" \"jest --runInBand\"",
-    "test:watch": "jest --watchAll --runInBand",
     "prepare": "husky",
     "commit": "cz",
     "request:get:status:staging": "curl -s https://clone-tabnews-fpds-git-fix-migrations-11c265-fpcodings-projects.vercel.app/api/v1/status | jq",
